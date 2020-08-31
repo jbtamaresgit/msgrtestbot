@@ -1,5 +1,8 @@
 require("dotenv").config();
 
+const FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN;
+const FB_PAGE_TOKEN = process.env.FB_PAGE_TOKEN;
+
 let postWebHook = (req, res) => {
     let body = req.body;
 
@@ -38,7 +41,7 @@ let postWebHook = (req, res) => {
 
 let getWebHook = (req, res) => {
     // Your verify token. Should be a random string.
-    let VERIFY_TOKEN = process.env.SELF_VERIFY_TOKEN;
+    let VERIFY_TOKEN = FB_VERIFY_TOKEN;
 
     // Parse the query params
     let mode = req.query['hub.mode'];
@@ -136,7 +139,7 @@ function callSendAPI(sender_psid, response) {
     // Send the HTTP request to the Messenger Platform
     request({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
-        "qs": { "access_token": process.env.FB_MSGR_TOKEN },
+        "qs": { "access_token": FB_PAGE_TOKEN},
         "method": "POST",
         "json": request_body
     }, (err, res, body) => {
