@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 let postWebHook = (req, res) => {
     app.post('/webhook', (req, res) => {  
  
