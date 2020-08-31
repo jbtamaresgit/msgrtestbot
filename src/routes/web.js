@@ -1,10 +1,10 @@
 import express from "express";
 
-let router = express.router();
+let router = express.Router();
 
 let initWebRoutes = (app) => {
     router.get("/", (req, res) => {
-        return res.send( data, "Hello World");
+        return res.send("Hello World");
     });
 
     return app.use("/", router);
