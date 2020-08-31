@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# vendor
+/vendor
+
+# idea
+.idea/
+/.idea
+
+# bower
+/public/bower_components
+
