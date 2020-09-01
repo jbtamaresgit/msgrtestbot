@@ -28,4 +28,4 @@
 
 #### 2.3 Facebook app
 - Log your developer account or account used to create the page
-- Follow the docs on how to config the webhook https://developers.facebook.com/docs/messenger-platform/
+- Follow the docs on how to config the webhook https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup
