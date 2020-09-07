@@ -3,6 +3,8 @@
 - This is a simple nodejs chatbot using Visual Studio Code IDE and Facebook Messenger Platform
 - The chatbot is deployed in Heroku
 - The project is using express framework
+- The project is using nodemon to restart the node server automatically whenever there is a file change 
+-- (npm install --save-dev nodemon babel-cli babel-preset-env)
 
 ## Setup 
 ### 1. Clone the project
@@ -10,7 +12,7 @@
 - In your terminal type command npm init to initialise the project
 - Fill in the required fields, make sure you do not change the entry point. 
   The default entry point is index.js
-- After filling up the fields, in your terminal type "npm install --save express dotenv ejs body-parser"
+- After filling up the fields, in your terminal type "npm install"
 - This will install express framework. EJS for view engine. And body-parser to get data from front-end to back-end
 - Create a .env file. This is where you are going to store your variables such as your verify token.
 
